@@ -36,11 +36,17 @@ h5 {
   font-size: 12px;
   padding-bottom: 5px;
 }
-
 h1 {
   font-size: 24px;
   padding-bottom: 4px;
 }
+p {
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  line-height: 130%;
+  font-size: 18px;
+}
+
 main {
   background-color: #f0f0f0;
 }
@@ -152,4 +158,29 @@ footer {
   	.last {
   		display: none;
   	}
+    .right {
+      /* паддинг потом убери */
+      padding-top: 100px;
+      height: 700px;
+      display: flex;
+    }
+    .right-pic {
+      width: 60vw;
+      height: 40vw;
+      margin-left: -5%;
+    }
+    h3 {
+      font-size: 40px;
+      padding-bottom: 25px;
+    }
+    p {
+      font-size: 20px;
+      width: 434px;
+    }
+    .left {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 600px;
+      align-items: center;
+    }
 }
