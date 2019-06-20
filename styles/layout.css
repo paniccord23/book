@@ -113,6 +113,42 @@ footer {
 .icon img {
   width: 3vw;
 }
+@media screen and (max-width: 550px) {
+  .small, .pict {
+    width: 100vw;
+    padding-top: 65px;
+  }
+  .right-pic {
+    width: 100vw;
+  }
+  .whole-book img{
+    width: 130vw;
+  }
+  .left-info {
+  padding-top: 10px;
+  padding-left: 5%;
+}
+.right-info {
+    padding-top: 26px;
+    padding-left: 5%;
+  }
+  p {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    line-height: 130%;
+    font-size: 18px;
+    padding-top: 17px;
+    padding-bottom: 22px;
+    width: 366px;
+  }
+  footer {
+    flex-direction: column;
+    height: 450px;
+  }
+  .footer-inf-1 {
+    width: 276px;
+  }
+}
 @media screen and (min-width: 1024px) {
   nav {
 		height: 68px;
@@ -161,6 +197,9 @@ footer {
   	.last {
   		display: none;
   	}
+    .small, .pict {
+      width: 55vw;
+    }
     .right {
       /* паддинг потом убери */
       padding-top: 100px;
@@ -172,8 +211,11 @@ footer {
       height: 40vw;
       margin-left: -5%;
     }
+    h1 {
+      font-size: 50px;
+    }
     h3 {
-      font-size: 40px;
+      font-size: 36px;
       padding-bottom: 25px;
     }
     p {
@@ -185,6 +227,9 @@ footer {
       flex-direction: row-reverse;
       height: 600px;
       align-items: center;
+    }
+    .whole-book img {
+      width: 100vw;
     }
     footer p {
       color: #fff;
