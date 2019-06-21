@@ -241,16 +241,16 @@ footer {
       height: 40vw;
       margin-left: -8%;
     }
-    h1 {
-    left: 8%;
+  h1 {
+    left: 4%;
     font-size: 50px;
     padding-bottom: 43px;
     position: relative;
     display: inline-block;
     z-index: 3;
     padding-left: 0.02em;
+    margin-left: 3%;
   }
-
 h1:before {
   content: '';
   position: absolute;
@@ -260,14 +260,13 @@ h1:before {
 }
 
 h1:before{
-  /* left: -9999px; */
     z-index: -1;
-    right: -1.1rem;
-    /* left: 0.1rem; */
-    top: 34%;
-    padding-left: 1.1rem;
-    padding-right: 1.1rem;
-    width: 100%;
+     right: -1.1rem;
+     /* left: 0.1rem; */
+     top: 34%;
+     padding-left: 1.1rem;
+     padding-right: 1.1rem;
+     width: 100%;
   }
 }
 
@@ -281,10 +280,11 @@ h1:before{
       padding-bottom: 25px;
     }
     p {
-      padding-left: 5%;
       font-size: 20px;
       width: 434px;
+      margin-left: 5%;
     }
+
     .patterns {
       padding-top: 100px;
       height: 650px;
@@ -300,8 +300,8 @@ h1:before{
       display: flex;
     }
     .small-pat img {
-      padding-left: 7%;
-      width: 14vw;
+      padding-left: 3%;
+      width: 11vw;
       height: 9vw;
     }
     .patrns {
@@ -313,9 +313,21 @@ h1:before{
     .left {
       display: flex;
       flex-direction: row-reverse;
-      height: 660px;
+       height: 660px;
       align-items: center;
     }
+    .left-pic {
+     margin-left: -41px;
+     width: 56vw;
+     height: 34vw;
+   }
+   .left-info {
+     margin-bottom: 100px;
+   }
+   .left-h {
+      right: calc(-50% - 28px);
+     top: 88px;
+   }
     .left-pic {
       margin-left: -41px;
       width: 56vw;
@@ -323,10 +335,6 @@ h1:before{
     }
     .left-info {
       margin-bottom: 100px;
-    }
-    .left-h {
-       right: calc(-50% - 28px);
-      top: 88px;
     }
     .right-info p {
 
