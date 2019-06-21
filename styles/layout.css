@@ -50,6 +50,9 @@ p {
 main {
   background-color: #f0f0f0;
 }
+.small, .pict {
+  padding-top: 8%;
+}
 footer {
   background-color: #101010;
   height: 212px;
@@ -119,10 +122,21 @@ footer {
     padding-top: 65px;
   }
   .right-pic {
-    width: 100vw;
+    width: 130vw;
   }
   .whole-book img{
     width: 130vw;
+  }
+  .left {
+    height: 550px;
+  }
+  .right {
+    height: 525px;
+  }
+  .left-pic {
+    width: 90vw;
+    margin-left: -40px;
+    margin-top: 30px;
   }
   .left-info {
   padding-top: 10px;
@@ -140,6 +154,22 @@ footer {
     padding-top: 17px;
     padding-bottom: 22px;
     width: 366px;
+  }
+  .patterns {
+    height: 500px;
+  }
+  .patterns img {
+    margin-top: 30px;
+  }
+  .small-pat {
+    margin-top: -73px;
+  }
+  .small-pat img {
+    width: 20vw;
+  }
+  .patrns {
+    display: flex;
+    flex-direction: column-reverse;
   }
   footer {
     flex-direction: column;
@@ -203,30 +233,103 @@ footer {
     .right {
       /* паддинг потом убери */
       padding-top: 100px;
-      height: 700px;
+      height: 560px;
       display: flex;
     }
     .right-pic {
       width: 60vw;
       height: 40vw;
-      margin-left: -5%;
+      margin-left: -8%;
     }
     h1 {
-      font-size: 50px;
-    }
+    left: 8%;
+    font-size: 50px;
+    padding-bottom: 43px;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    padding-left: 0.02em;
+  }
+
+h1:before {
+  content: '';
+  position: absolute;
+  height: 26px;
+  background: #FDE40E;
+  /* top: 50%; */
+}
+
+h1:before{
+  /* left: -9999px; */
+    z-index: -1;
+    right: -1.1rem;
+    /* left: 0.1rem; */
+    top: 34%;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    width: 100%;
+  }
+}
+
+/* h1:after{
+  left: 100%;
+  right: -9999px;
+} */
+
     h3 {
       font-size: 36px;
       padding-bottom: 25px;
     }
     p {
+      padding-left: 5%;
       font-size: 20px;
       width: 434px;
+    }
+    .patterns {
+      padding-top: 100px;
+      height: 650px;
+      display: flex;
+      margin-left: -8%;
+    }
+    .patterns img {
+      width: 69vw;
+      height: 45vw;
+      margin-top: -120px;
+    }
+    .small-pat {
+      display: flex;
+    }
+    .small-pat img {
+      padding-left: 7%;
+      width: 14vw;
+      height: 9vw;
+    }
+    .patrns {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-top: -128px;
     }
     .left {
       display: flex;
       flex-direction: row-reverse;
-      height: 600px;
+      height: 660px;
       align-items: center;
+    }
+    .left-pic {
+      margin-left: -41px;
+      width: 56vw;
+      height: 34vw;
+    }
+    .left-info {
+      margin-bottom: 100px;
+    }
+    .left-h {
+       right: calc(-50% - 28px);
+      top: 88px;
+    }
+    .right-info p {
+
     }
     .whole-book img {
       width: 100vw;
