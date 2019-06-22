@@ -117,6 +117,30 @@ footer {
   width: 3vw;
 }
 @media screen and (max-width: 550px) {
+  h1 {
+    left: 4%;
+    font-size: 24px;
+    padding-bottom: 14px;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    padding-left: 0.02em;
+    margin-left: 3%;
+  }
+  h1:before {
+    content: '';
+    position: absolute;
+    height: 12px;
+    background: #FDE40E;
+    /* top: 50%; */
+  }
+  h1:before{
+    z-index: -1;
+    right: -0.8rem;
+    top: 37%;
+    padding-right: 1.5rem;
+    width: 100%;
+  }
   .small, .pict {
     width: 100vw;
     padding-top: 65px;
@@ -128,7 +152,7 @@ footer {
     width: 130vw;
   }
   .left {
-    height: 550px;
+    height: 590px;
   }
   .right {
     height: 525px;
@@ -153,13 +177,16 @@ footer {
     font-size: 18px;
     padding-top: 17px;
     padding-bottom: 22px;
-    width: 366px;
+    width: 348px;
   }
   .patterns {
     height: 500px;
   }
   .patterns img {
     margin-top: 30px;
+  }
+  .pat-book {
+    margin-left: -32%;
   }
   .small-pat {
     margin-top: -73px;
@@ -171,6 +198,17 @@ footer {
     display: flex;
     flex-direction: column-reverse;
   }
+  .whole-book {
+    display: flex;
+    align-items: center;
+    height: 360px;
+  }
+  .real-part {
+    height: 560px;
+  }
+  .real {
+    margin-top: 30px;
+  }
   footer {
     flex-direction: column;
     height: 450px;
@@ -179,8 +217,166 @@ footer {
     width: 276px;
   }
 }
+@media screen and (min-width: 768px) {
+  nav {
+    height: 68px;
+    justify-content: flex-start;
+  }
+  nav {
+    height: 68px;
+    display: flex;
+    height: 68px;
+    justify-content: space-between;
+  }
 
-@media screen and (max-width: 1440px) {
+  .first {
+    height: 50px;
+  }
+  .last {
+    display: unset;
+  }
+  .small, .pict {
+    width: 46vw;
+    margin-bottom: 70px;
+    padding-top: 0;
+  }
+  .right {
+    /* паддинг потом убери */
+    padding-top: 100px;
+    height: 460px;
+    display: flex;
+  }
+  .right-pic {
+    width: 60vw;
+    height: 40vw;
+    margin-left: -8%;
+  }
+  h1 {
+    left: 4%;
+    font-size: 50px;
+    padding-bottom: 43px;
+    position: relative;
+    display: inline-block;
+    z-index: 3;
+    padding-left: 0.02em;
+    margin-left: 3%;
+  }
+  h1:before {
+    content: '';
+    position: absolute;
+    height: 26px;
+    background: #FDE40E;
+    /* top: 50%; */
+  }
+
+  h1:before{
+    z-index: -1;
+    right: -1.1rem;
+    /* left: 0.1rem; */
+    top: 34%;
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    width: 100%;
+  }
+  h3 {
+    padding-left: 5%;
+    font-size: 36px;
+    padding-bottom: 25px;
+  }
+  p {
+    font-size: 18px;
+    width: 349px;
+    margin-left: 5%;
+  }
+  .right-info {
+    padding-left: 7%;
+  }
+  .patterns {
+    padding-top: 100px;
+    height: 650px;
+    display: flex;
+    margin-left: -8%;
+  }
+  .patterns img {
+    width: 69vw;
+    height: 45vw;
+    margin-top: -120px;
+  }
+  .small-pat {
+    display: flex;
+  }
+  .small-pat img {
+    padding-left: 6%;
+    width: 12vw;
+    height: 8vw;
+  }
+  .patrns {
+    display: flex;
+    height: 311px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: -128px;
+  }
+  .left {
+    display: flex;
+    flex-direction: row-reverse;
+    height: 570px;
+    align-items: flex-end;
+  }
+  .left-pic {
+    margin-left: -41px;
+    width: 56vw;
+    height: 34vw;
+  }
+  .left-info {
+    margin-bottom: 100px;
+  }
+  .left-h {
+    right: calc(-50% - 28px);
+    top: 88px;
+  }
+  .left-pic {
+    margin-left: -10%;
+    width: 56vw;
+    height: 34vw;
+  }
+  .left-info {
+    margin-bottom: 160px;
+  }
+  .whole-book img {
+    width: 100vw;
+  }
+  .navigation-part {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .navig {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navig img {
+    width: 45vw;
+  }
+  .real-part {
+    display: flex;
+    flex-direction: row;
+    height: 560px;
+  }
+  .real {
+    width: 47vw;
+    height: 30vw;
+  }
+  .real-part p {
+    padding-left: 8%;
+    width: 488px;
+  }
+  footer p {
+    color: #fff;
+    margin-left: 0%;
+  }
+}
+@media screen and (min-width: 1024px) {
   nav {
     height: 68px;
     justify-content: flex-start;
@@ -230,6 +426,8 @@ footer {
   }
   .small, .pict {
     width: 55vw;
+    margin-bottom: 70px;
+    padding-top: 0;
   }
   .right {
     /* паддинг потом убери */
@@ -330,15 +528,38 @@ footer {
     height: 34vw;
   }
   .left-info {
-    margin-bottom: 100px;
-  }
-  .right-info p {
-
+    margin-bottom: 160px;
   }
   .whole-book img {
     width: 100vw;
   }
+  .navigation-part {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .navig {
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navig img {
+    width: 45vw;
+  }
+  .real-part {
+    display: flex;
+    flex-direction: row;
+    height: 560px;
+  }
+  .real {
+    width: 47vw;
+    height: 30vw;
+  }
+  .real-part p {
+    padding-left: 8%;
+    width: 488px;
+  }
   footer p {
     color: #fff;
+    margin-left: 0%;
   }
 }
